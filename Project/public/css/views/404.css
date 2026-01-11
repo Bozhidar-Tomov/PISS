@@ -1,0 +1,41 @@
+@import url('../components/common-container.css');
+@import url('../components/link.css');
+
+
+.common-container.not-found {
+    border-radius: 18px;
+    max-width: 600px;
+    background: rgba(30, 0, 40, 0.92);
+    box-shadow: 0 8px 32px rgba(160, 80, 255, 0.18), 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.not-found-title {
+    font-size: 2.7em;
+    margin-bottom: 10px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 12px #a16ca1, 0 1px 0 #000;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.not-found-subtitle {
+    font-size: 1.3em;
+    color: #ff6fa1 !important;
+    margin-bottom: 18px;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+}
+
+.not-found p {
+    font-size: 1.1em;
+    color: #f7eaff;
+    margin-bottom: 18px;
+    text-align: center;
+}

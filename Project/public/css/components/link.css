@@ -1,0 +1,15 @@
+.link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.05rem;
+    color: #e6a6e6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.18s ease;
+}
+
+.link:hover,
+.link:focus {
+    color: #ff6fa1;
+    outline: none;
+}

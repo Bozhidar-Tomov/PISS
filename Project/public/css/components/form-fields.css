@@ -1,0 +1,86 @@
+.form-fields form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-fields label {
+    display: block;
+    font-size: 1em;
+    color: #e6a6e6;
+    margin-top: 10px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.form-fields input[type="text"],
+.form-fields input[type="password"],
+.form-fields input[type="number"],
+.form-fields select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1.5px solid #c399c4;
+    border-radius: 7px;
+    background: #3a1a3a;
+    color: #f7eaff;
+    font-size: 1em;
+    margin-bottom: 2px;
+    transition: border 0.18s, background 0.18s;
+}
+
+.form-fields input[type="text"]:focus,
+.form-fields input[type="password"]:focus,
+.form-fields input[type="number"]:focus,
+.form-fields input[type="range"]:focus,
+.form-fields select:focus {
+    border-color: #ff6fa1;
+    box-shadow: 0 0 0 2px rgba(255, 111, 161, 0.25);
+    outline: none;
+}
+
+.form-fields input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+    background: #3a1a3a;
+    border: 1px solid #c399c4;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-fields input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ff6fa1;
+    cursor: pointer;
+    border: 1px solid #ff8fb3;
+    box-shadow: 0 0 5px rgba(255, 111, 161, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+.form-fields input[type="range"]::before {
+    content: '';
+    position: absolute;
+    height: 6px;
+    left: 0;
+    top: 1px;
+    background: #ff6fa1;
+    border-radius: 3px 0 0 3px;
+    pointer-events: none;
+    width: var(--range-progress, 50%);
+    z-index: 1;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    position: relative;
+}
