@@ -37,7 +37,7 @@
         <small>&copy; <?= date('Y') ?>
             <span class="project-name">Crowd Pulse</span>
             <span class="separator" aria-hidden="true">|</span>
-            <span class="authors">Bozhidar Tomov, Mira Velikova</span>
+            <span class="authors">Bozhidar Tomov, Kristian Viktorov</span>
         </small>
     </footer>
     <script>

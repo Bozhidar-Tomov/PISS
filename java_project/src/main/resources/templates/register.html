@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/layouts/layout.css">
+    <link rel="stylesheet" href="/css/components/common-container.css">
+    <link rel="stylesheet" href="/css/components/form-fields.css">
+    <link rel="stylesheet" href="/css/components/status-messages.css">
+    <link rel="stylesheet" href="/css/components/btn-common.css">
+    <link rel="stylesheet" href="/css/components/btn-primary.css">
+    <link rel="stylesheet" href="/css/components/link.css">
+    <link rel="stylesheet" href="/css/views/register.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="site-title-link" href="/">
+            <div class="site-title">
+                <h1>Crowd Pulse</h1>
+                <h2>Feel the beat of every emotion</h2>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <section class="common-container register form-fields" aria-label="Register">
+            <h1>Register</h1>
+            <div class="status status-error" role="alert" style="{{errorStyle}}">
+                {{error}}
+            </div>
+
+            <form method="post" action="/register" autocomplete="on">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required autocomplete="username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="new-password">
+
+                <label for="confirm_password">Confirm Password:</label>
+                <input type="password" id="confirm_password" name="confirm_password" required
+                    autocomplete="new-password">
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="role">Role:</label>
+                <select name="role" id="role" required>
+                    <option value="active participant">Active Participant</option>
+                    <option value="passive viewer">Passive Viewer</option>
+                </select>
+
+                <label for="categories">Categories (comma-separated, e.g. VIP,Guest,Fan):</label>
+                <input type="text" name="categories" id="categories" autocomplete="off">
+
+                <button class="btn btn-primary" type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a class="link" href="/login">Login here.</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; 2026
+            <span class="project-name">Crowd Pulse</span>
+            <span class="separator" aria-hidden="true">|</span>
+            <span class="authors">Bozhidar Tomov, Kristian Viktorov</span>
+        </small>
+    </footer>
+    <script>
+        window.basePath = "";
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'bg.sofia.uni.fmi.mjt.crowdpulse'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(platform("org.mongodb:mongodb-driver-bom:5.6.2"))
+    implementation 'org.mongodb:mongodb-driver-sync:5.6.2'
+    implementation 'com.google.code.gson:gson:2.11.0'
+    
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+}
+
+application {
+    mainClass = 'bg.sofia.uni.fmi.mjt.crowdpulse.CrowdPulseServer'
+}
+
+test {
+    useJUnitPlatform()
+}

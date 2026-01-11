@@ -259,7 +259,7 @@ Key features:
 
 ## Original Authors
 
-Bozhidar Tomov, Mira Velikova
+Bozhidar Tomov, Kristian Viktorov
 
 ## Database Schema Updates
 

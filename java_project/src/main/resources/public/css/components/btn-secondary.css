@@ -1,0 +1,20 @@
+.btn-secondary {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 0;
+    font-size: 1.1rem;
+    background: transparent;
+    color: #a16ca1;
+    border: 1.5px solid #a16ca1;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(160, 80, 255, 0.06);
+    transition: background 0.24s, color 0.24s, box-shadow 0.24s;
+}
+
+.btn-secondary:hover {
+    background: rgba(160, 80, 255, 0.08);
+    color: #ff6fa1;
+    box-shadow: 0 4px 16px rgba(255, 111, 161, 0.10);
+}

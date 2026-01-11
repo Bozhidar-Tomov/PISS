@@ -1,0 +1,47 @@
+.status {
+    padding: 10px 18px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+    font-size: 1.04em;
+    font-weight: 500;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.status ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.status li {
+    margin-bottom: 2px;
+}
+
+.status-success {
+    background: rgba(26, 63, 25, 0.5);
+    border: 1.5px solid #4CAF50;
+    color: #4CAF50;
+}
+
+.status-success li {
+    color: #4CAF50;
+}
+
+.status-error {
+    background: rgba(67, 25, 40, 0.5);
+    border: 1.5px solid #ff4788;
+    color: #ff4788;
+}
+
+.status-error li {
+    color: #ff4788;
+}
+
+.status-warning {
+    background: rgba(63, 52, 25, 0.5);
+    border: 1.5px solid #FFC107;
+    color: #FF8F00;
+}
+
+.status-warning li {
+    color: #FF8F00;
+} 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/layouts/layout.css">
+    <link rel="stylesheet" href="/css/components/common-container.css">
+    <link rel="stylesheet" href="/css/components/form-fields.css">
+    <link rel="stylesheet" href="/css/components/status-messages.css">
+    <link rel="stylesheet" href="/css/components/btn-common.css">
+    <link rel="stylesheet" href="/css/components/btn-primary.css">
+    <link rel="stylesheet" href="/css/components/link.css">
+    <link rel="stylesheet" href="/css/views/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a class="site-title-link" href="/">
+            <div class="site-title">
+                <h1>Crowd Pulse</h1>
+                <h2>Feel the beat of every emotion</h2>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <section class="common-container login form-fields" aria-label="Login">
+            <h1>{{title}}</h1>
+            <!-- Error placeholder -->
+            <div class="status status-error" role="alert" style="{{errorStyle}}">
+                {{error}}
+            </div>
+
+            <form method="post" action="/login" autocomplete="on">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required autocomplete="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required autocomplete="current-password">
+                <button class="btn btn-primary" type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a class="link" href="/register">Register here.</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <small>&copy; 2026
+            <span class="project-name">Crowd Pulse</span>
+            <span class="separator" aria-hidden="true">|</span>
+            <span class="authors">Bozhidar Tomov, Kristian Viktorov</span>
+        </small>
+    </footer>
+    <script>
+        window.basePath = "";
+    </script>
+</body>
+
+</html>
